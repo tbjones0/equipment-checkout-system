@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ECS.Application\ECS.Application.csproj" />
+    <ProjectReference Include="..\ECS.Infrastructure\ECS.Infrastructure.csproj" />
+    <ProjectReference Include="..\ECS.Domain\ECS.Domain.csproj" />
+  </ItemGroup>
+</Project>
