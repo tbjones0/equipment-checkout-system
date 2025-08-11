@@ -1,6 +1,6 @@
 # ECS — Architectural Framework (Week 5)
 
-This repository contains a minimal **architectural skeleton** for the Equipment Checkout System (ECS),
+This repository contains a minimal architectural skeleton for the Equipment Checkout System (ECS),
 aligned with the SDD (v1.3). It compiles and runs as a console app and demonstrates a simple scan/checkout/check-in flow using in-memory data.
 
 ## Projects
