@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Core Launch (ECS Console)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/ECS.Presentation.Console/bin/Debug/net8.0/ECS.Presentation.Console.dll",
+      "cwd": "${workspaceFolder}/src/ECS.Presentation.Console",
+      "console": "integratedTerminal"
+    }
+  ]
+}
