@@ -26,7 +26,7 @@ dotnet build equipment-checkout-system.sln
 
 > Credentials: `demo` / `demo` (for demo AuthService only).
 
-### Next steps (Week 6)
+## Next steps (Week 6)
 - Swap InMemory repositories for a real DB implementation
 - Add barcode scanner adapters and UI
 - Extend error handling & logging per SDD
