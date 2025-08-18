@@ -14,6 +14,16 @@ aligned with the SDD (v1.3). It compiles and runs as a console app and demonstra
 2. Set **ECS.Presentation.Console** as Startup Project.
 3. Build & Run (F5).
 
+### Build from the Command Line
+From the project root:
+
+```bash
+# Clean previous build artifacts
+dotnet clean equipment-checkout-system.sln
+
+# Build the solution
+dotnet build equipment-checkout-system.sln
+
 > Credentials: `demo` / `demo` (for demo AuthService only).
 
 ## Next steps (Week 6)
