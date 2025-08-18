@@ -1,0 +1,91 @@
+@page "/"
+@inject IAuthService Auth
+@inject IToolService Tools
+@inject ITransactionService Tx
+
+<h1>ECS — Equipment Checkout</h1>
+
+@if (!_authed)
+{
+    <EditForm Model="@login" OnValidSubmit="DoLogin">
+        <InputText @bind-Value="login.Username" placeholder="Username" />
+        <InputText @bind-Value="login.Password" placeholder="Password" type="password" />
+        <button type="submit">Login</button>
+    </EditForm>
+    @if (!string.IsNullOrWhiteSpace(_error)) { <p style="color:red">@_error</p> }
+}
+else
+{
+    <p>Welcome, <b>@_user?.Name</b></p>
+    <EditForm Model="@scan" OnValidSubmit="DoScan">
+        <InputText @bind-Value="scan.Barcode" placeholder="Scan barcode…" />
+        <button type="submit">Scan</button>
+    </EditForm>
+
+    @if (_tool is not null)
+    {
+        <p>Scanned: <b>@_tool.Barcode</b> (condition=@_tool.Condition)</p>
+        <button @onclick="Checkout">Checkout</button>
+        <button @onclick="Checkin">Check-in</button>
+    }
+
+    <h3>My Tools</h3>
+    <ul>
+        @foreach (var t in _myTools)
+        {
+            <li>@t.Barcode</li>
+        }
+    </ul>
+}
+
+@code {
+    record LoginVm { public string Username { get; set; } = "demo"; public string Password { get; set; } = "demo"; }
+    record ScanVm { public string Barcode { get; set; } = "TL-0001"; }
+
+    bool _authed = false;
+    ECS.Domain.Employee? _user;
+    ECS.Domain.Tool? _tool;
+    List<ECS.Domain.Tool> _myTools = new();
+    string _error = "";
+
+    LoginVm login = new();
+    ScanVm scan = new();
+
+    void DoLogin()
+    {
+        _error = "";
+        try
+        {
+            _user = Auth.Authenticate(login.Username, login.Password);
+            _authed = true;
+            _myTools = Tools.ListMyTools(_user.Id).ToList();
+        }
+        catch (Exception ex)
+        {
+            _error = ex.Message;
+        }
+        StateHasChanged();
+    }
+
+    void DoScan()
+    {
+        _tool = Tools.GetByBarcode(scan.Barcode);
+        StateHasChanged();
+    }
+
+    void Checkout()
+    {
+        if (_user is null || _tool is null) return;
+        Tx.Checkout(_tool.Id, _user.Id, "Web checkout");
+        _myTools = Tools.ListMyTools(_user.Id).ToList();
+        _tool = Tools.GetByBarcode(scan.Barcode);
+    }
+
+    void Checkin()
+    {
+        if (_user is null || _tool is null) return;
+        Tx.Checkin(_tool.Id, _user.Id, "Web check-in");
+        _myTools = Tools.ListMyTools(_user.Id).ToList();
+        _tool = Tools.GetByBarcode(scan.Barcode);
+    }
+}

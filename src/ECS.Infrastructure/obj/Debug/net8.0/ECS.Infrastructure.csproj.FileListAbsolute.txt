@@ -1,0 +1,17 @@
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/bin/Debug/net8.0/ECS.Infrastructure.deps.json
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/bin/Debug/net8.0/ECS.Infrastructure.dll
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/bin/Debug/net8.0/ECS.Infrastructure.pdb
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/bin/Debug/net8.0/ECS.Application.dll
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/bin/Debug/net8.0/ECS.Domain.dll
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/bin/Debug/net8.0/ECS.Application.pdb
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/bin/Debug/net8.0/ECS.Domain.pdb
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/obj/Debug/net8.0/ECS.Infrastructure.csproj.AssemblyReference.cache
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/obj/Debug/net8.0/ECS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/obj/Debug/net8.0/ECS.Infrastructure.AssemblyInfoInputs.cache
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/obj/Debug/net8.0/ECS.Infrastructure.AssemblyInfo.cs
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/obj/Debug/net8.0/ECS.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/obj/Debug/net8.0/ECS.Infr.E7281B52.Up2Date
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/obj/Debug/net8.0/ECS.Infrastructure.dll
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/obj/Debug/net8.0/refint/ECS.Infrastructure.dll
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/obj/Debug/net8.0/ECS.Infrastructure.pdb
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Infrastructure/obj/Debug/net8.0/ref/ECS.Infrastructure.dll

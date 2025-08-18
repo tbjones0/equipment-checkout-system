@@ -6,4 +6,8 @@
     <ProjectReference Include="..\ECS.Application\ECS.Application.csproj" />
     <ProjectReference Include="..\ECS.Domain\ECS.Domain.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="*"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="*"/>
+  </ItemGroup>
 </Project>

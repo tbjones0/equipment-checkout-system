@@ -1,0 +1,15 @@
+# Week 6 Upgrade — Commands
+
+# From the solution root:
+dotnet add src/ECS.Infrastructure/ECS.Infrastructure.csproj package Microsoft.EntityFrameworkCore
+dotnet add src/ECS.Infrastructure/ECS.Infrastructure.csproj package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add src/ECS.Presentation.Console/ECS.Presentation.Console.csproj package Microsoft.Extensions.Logging
+dotnet add src/ECS.Presentation.Console/ECS.Presentation.Console.csproj package Microsoft.Extensions.Logging.Console
+
+# To run with SQLite:
+set ECS_USE_SQLITE=1         # Windows PowerShell: $env:ECS_USE_SQLITE=1
+set ECS_SQLITE_DB=ecs.db
+dotnet run --project src/ECS.Presentation.Console
+
+# The sample entry point with SQLite+logging is Program.Week6.cs.
+# You can rename it to Program.cs (after backing up original) or set it as startup item.

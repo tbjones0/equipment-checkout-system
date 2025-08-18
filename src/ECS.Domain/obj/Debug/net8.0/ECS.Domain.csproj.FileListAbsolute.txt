@@ -1,0 +1,11 @@
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Domain/bin/Debug/net8.0/ECS.Domain.deps.json
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Domain/bin/Debug/net8.0/ECS.Domain.dll
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Domain/bin/Debug/net8.0/ECS.Domain.pdb
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Domain/obj/Debug/net8.0/ECS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Domain/obj/Debug/net8.0/ECS.Domain.AssemblyInfoInputs.cache
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Domain/obj/Debug/net8.0/ECS.Domain.AssemblyInfo.cs
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Domain/obj/Debug/net8.0/ECS.Domain.csproj.CoreCompileInputs.cache
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Domain/obj/Debug/net8.0/ECS.Domain.dll
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Domain/obj/Debug/net8.0/refint/ECS.Domain.dll
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Domain/obj/Debug/net8.0/ECS.Domain.pdb
+/Users/tim/Documents/ecs-week6-vscode-ready/src/ECS.Domain/obj/Debug/net8.0/ref/ECS.Domain.dll
